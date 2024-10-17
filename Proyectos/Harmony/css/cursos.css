@@ -1,0 +1,165 @@
+body {
+  font-size: 23px;
+  background-color: #a5d8f7;
+  background-image: linear-gradient(
+    90deg,
+    #a5d8f7 0%,
+    #ffffff 29%,
+    #ffffff 77%,
+    #a5d8f7 100%
+  );
+  font-family: "https//fonts.google.com/specimen/Rubik";
+}
+
+.course-card {
+  flex: 1;
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px #00000035;
+  background: #ffffff25;
+  display: flex;
+}
+
+.frase {
+  font-size: 30px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 1px 1px rgb(126, 126, 126);
+}
+
+.cursos {
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+.card-body {
+  border-top: 0;
+  border-left: 2px solid #ffffff75;
+  box-shadow: 5px 5px 12px #00000035;
+  background: #ffffff25;
+}
+
+.btn {
+  background-color: #f4a305;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+  font-weight: bold;
+  transition: all 0.2s;
+}
+
+.btn.my:hover {
+  background-color: #ff7300;
+  color: #000000;
+  transform: scale(1.1);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* CSS TESTIMONIOS */
+
+.box-area {
+  padding: 30px;
+  position: relative;
+  display: block;
+  background: #fff;
+  color: #000;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 40px 0;
+}
+.box-area h5 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000000;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.box-area span {
+  color: #000000;
+  display: block;
+  font-size: 15px;
+  margin: 0 0 10px;
+  font-weight: 400;
+}
+.box-area .content {
+  color: #262626;
+}
+.box-area .img-area {
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  top: -40px;
+  left: 0;
+  bottom: 0;
+  margin: 0 auto;
+  right: 0;
+  z-index: 1;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
+}
+.box-area .img-area img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+#testimonial_area .owl-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+#testimonial_area .owl-prev,
+#testimonial_area .owl-next {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  color: #000000;
+  border-radius: 50%;
+  text-align: center;
+  background: #fff;
+  position: absolute;
+}
+#testimonial_area .owl-prev {
+  left: -60px;
+  top: -30px;
+}
+#testimonial_area .owl-next {
+  right: -60px;
+  top: -30px;
+}
+@media only screen and (max-width: 991px) {
+  .owl-nav {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .box-area {
+    text-align: center;
+  }
+  .owl-nav {
+    display: none;
+  }
+}

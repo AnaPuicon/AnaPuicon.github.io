@@ -107,27 +107,27 @@
                 <div class="wrapper">
                     <div class="box-area">
                         <div class="box">
-                            <img alt="" src="imagenes/yo.jpg">
+                            <img alt="" src="imagenes/Logo_Principal.png">
                             <div class="overlay">
-                                <h3>Proyecto 1</h3>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque modi explicabo libero ea nam. Quod.</p>
-                                <a href="#">Ver ahora</a>
+                                <h3>Harmony</h3>
+                                <p>Pagina informativa para un grupo de psicologos.</p>
+                                <a href="C:\Users\Mapi\Desktop\Banana juegos\Portafolio\Proyectos\Harmony\index.html", target="_blank">Ver ahora</a>
                             </div>
                         </div>
                         <div class="box">
                             <img alt="" src="imagenes/yo.jpg">
                             <div class="overlay">
-                                <h3>Proyecto 2</h3>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque modi explicabo libero ea nam. Quod.</p>
-                                <a href="#">Ver ahora</a>
+                                <h3>Sistema de reportes</h3>
+                                <p>Sistema que realiza el proceso de ETL.</p>
+                                <a href="Proyectos/Reporteria/reporteria.html", target="_blank">Ver ahora</a>
                             </div>
                         </div>
                         <div class="box">
                             <img alt="" src="imagenes/yo.jpg">
                             <div class="overlay">
-                                <h3>Proyecto 3</h3>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque modi explicabo libero ea nam. Quod.</p>
-                                <a href="#">Ver ahora</a>
+                                <h3>Web scrapping</h3>
+                                <p>Bot creado con python-selenium.</p>
+                                <a href="Proyectos/Bot Python/bot.html", target="_blank">Ver ahora</a>
                             </div>
                         </div>
                     </div>
@@ -163,7 +163,13 @@
 
         </main>
         <footer>
-            <p class="text-center"> &copy; Todos los derechos reservados a Ana Puicón.</p>
+            <p class="text-center">
+                &copy; Todos los derechos reservados a Ana Puicón <span id="currentYear"></span>.
+            </p>
+            
+            <script>
+                document.getElementById('currentYear').textContent = new Date().getFullYear();
+            </script>
         </footer>
         <!-- Bootstrap JavaScript Libraries -->
         <script

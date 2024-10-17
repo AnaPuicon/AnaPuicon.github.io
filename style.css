@@ -211,7 +211,7 @@ h2{
 	font-weight: 500;
 	margin-bottom: 5px;
 	margin-top: 80%;
-	font-size: 40px;
+	font-size: 30px;
 	letter-spacing: 2px;
 }
 .overlay a {
@@ -256,6 +256,10 @@ footer p{
     display: none;
     font-size: 30px;
     cursor: pointer;
+}
+
+.bot-text {
+    font-size: 18px;
 }
 
 /* MEDIAQUERYS */
