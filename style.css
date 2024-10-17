@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Single+Day&family=Yanone+Kaffeesatz:wght@400;700&display=swap');
+
+body{
+    padding: 5px;
+    margin: 10px;
+    font-family: 'Single Day', cursive;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    background-color: #fde6d7;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 15px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin-bottom: 10px;
+}
+
+.navbar ul li a {
+    color: #9b4d1d;
+    text-decoration: none;
+    font-size: 25px;
+    position: relative;
+}
+
+.navbar ul li a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #b96836;
+    filter: blur(10px);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.navbar ul li a:hover::before {
+    opacity: 5;
+}
+
+h1{
+    text-align: center;
+    margin-top: 150px;
+    font-size: 70px;
+    justify-content: center;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 100px;
+    color: #b96836;
+}
+
+h2{
+    font-size: 60px;
+    color: #a85928;
+    font-weight: bold;
+}
+
+.porfile{
+    font-size: 25px;
+    margin-right: 200px;
+    text-align: justify;
+}
+
+.container{
+    background-color: #f0f0f0;
+    padding: 50px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+}
+
+.row img{
+    max-width: 100%;
+    width: 350px;
+    border-radius: 10px;
+	position: relative;
+	overflow: hidden;
+	box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+}
+
+.conocimientos{
+    background-color: #fcb68a;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-top: 20px;
+}
+.skills{
+    font-size: 35px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 50px;
+}
+
+.skills i{
+    font-size: 35px;
+}
+
+.skills li{
+    font-size: 25px;
+    text-align: center;
+    margin: 20px;
+    list-style-type: none;
+}
+
+.contact{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 100px;
+    background-color: #f0f0f0;
+    padding-top: 20px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+}
+
+.contact a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+.contact i:hover{
+    transform: scale(1.5);
+    
+}
+.contact i{
+    font-size: 30px;
+    position: relative;
+    text-decoration: none;
+    color: black;
+    transition: transform 0.3s ease;
+}
+
+.contacto{
+    background-color: #fcb081;
+    padding: 10px;
+    padding-top: 50px;
+}
+
+.CV a i{
+    font-size: 40px;
+    text-align: right;
+    transition: transform 0.3s ease;
+    color: black;
+}
+
+.CV {
+    font-size: 35px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.CV i:hover{
+    transform: scale(1.2);
+}
+
+.wrapper{
+    padding: 10px 10%;
+}
+#card-area{
+    padding: 50px 0;
+}
+.box-area{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.box {
+	border-radius: 10px;
+	position: relative;
+	overflow: hidden;
+	box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+}
+.box img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.overlay {
+	width: 100%;
+	height: 0;
+	background: linear-gradient(transparent,#ffffff 58%);
+	border-radius: 10px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 40px;
+	text-align: center;
+	font-size: 14px;
+	transition: height 0.5s;
+}
+.overlay h3 {
+	font-weight: 500;
+	margin-bottom: 5px;
+	margin-top: 80%;
+	font-size: 40px;
+	letter-spacing: 2px;
+}
+.overlay a {
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 15px;
+	background: #b96836;
+	border-radius: 50px;
+	text-align: center;
+	padding: 5px 15px;
+}
+.box:hover img{
+    transform: scale(1.2);
+}
+.box:hover .overlay{
+    height: 100%;
+}
+
+.sobre::after {
+    content: ".";
+    animation: parpadeo 1s infinite alternate;
+    color: #b96836;
+}
+
+@keyframes parpadeo {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+footer p{
+    font-size: 25px;
+    padding: 20px;
+    margin: 20px;
+}
+
+/* Estilos para el botón de hamburguesa */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* MEDIAQUERYS */
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 35px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    h2 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .porfile {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }    
+
+    .navbar ul {
+        text-align: center;
+    }
+
+    .navbar ul li {
+        display: inline-block;
+        margin: 0 10px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .col-lg-6 {
+        width: 100%;
+    }
+
+    .skills, .contact, .contacto {
+        padding: 15px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    .navbar {
+        z-index: 1050; /* Bootstrap usa 1040 para modales, así que 1050 está por encima de todo lo demás */
+        position: relative; /* z-index solo funciona en elementos posicionados */
+    }
+    
+    #nav-list {
+        display: none;
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.9);
+        color: white;
+        z-index: 1;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1050;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+    }
+
+    #nav-list.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        z-index: 1051;
+        position: relative;
+        background-color: #fcb68a;
+    }
+    
+    .box img {
+        z-index: 1;
+        position: relative;
+        display: block;
+    }
+
+}
