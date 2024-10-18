@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="icon" href="img/Logo.ico" type="image/x-icon" />
+    <link rel="icon" href="img/Logo_negro.ico" type="image/x-icon" />
     <title>Harmony</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
@@ -164,7 +164,12 @@
             <p>
               <span class="fas fa-book-open"></span>
               <br />
-              © Todos los derechos reservados a hamorny 2023
+              © Todos los derechos reservados a hamorny <span id="currentYear"></span>.
+            </p>
+            
+            <script>
+                document.getElementById('currentYear').textContent = new Date().getFullYear();
+            </script>
             </p>
           </div>
         </div>

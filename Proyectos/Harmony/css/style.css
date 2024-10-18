@@ -100,3 +100,35 @@ h2 {
 a {
   text-decoration: none;
 }
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  .Imagen_Principal {
+    width: 100%;
+    height: auto;
+  }
+
+  .logo {
+    width: 200px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .Imagen_Principal {
+    width: 100%;
+    height: auto;
+  }
+
+  .logo {
+    width: 150px;
+    height: 75px;
+  }
+}
