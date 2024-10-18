@@ -7,46 +7,43 @@ body{
     font-family: 'Yanone Kaffeesatz', sans-serif;
     background-color: #fde6d7;
 }
+/* Navbar centrado */
 .navbar {
-    position: fixed;
-    top: 0;
-    right: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #b96836;
     padding: 15px;
+    border-radius: 30px; /* Bordes redondeados */
+    margin: 20px auto;
+    width: 80%;
+    max-width: 1000px;
 }
 
-.navbar ul {
-    list-style-type: none;
+/* Estilos de los items del navbar */
+.nav-items {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* Espacio entre los elementos */
     margin: 0;
     padding: 0;
 }
 
-.navbar ul li {
-    margin-bottom: 10px;
+.nav-items li {
+    display: inline;
 }
 
-.navbar ul li a {
-    color: #9b4d1d;
+.nav-items a {
     text-decoration: none;
+    color: white;
     font-size: 25px;
-    position: relative;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s;
 }
 
-.navbar ul li a::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #b96836;
-    filter: blur(10px);
-    z-index: -1;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.navbar ul li a:hover::before {
-    opacity: 5;
+.nav-items a:hover {
+    background-color: #e28246; /* Cambio de color al pasar el mouse */
 }
 
 h1{
@@ -68,7 +65,6 @@ h2{
 
 .porfile{
     font-size: 25px;
-    margin-right: 200px;
     text-align: justify;
 }
 

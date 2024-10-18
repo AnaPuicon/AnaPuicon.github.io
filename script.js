@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
 
     var titulo = document.getElementById("titulo");
-    var contenido = "Desarrolladora de software creativa y versátil: Creación de sistemas, páginas web y aplicaciones con compromiso y adaptabilidad";
+    var contenido = "Desarrolladora de Sistemas con Experiencia en Automatización de Procesos y Desarrollo Web";
     
     titulo.textContent = "";
 
