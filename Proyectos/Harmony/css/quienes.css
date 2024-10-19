@@ -35,7 +35,7 @@ h2 {
   background: #ffffff;
   box-shadow: 5px 5px 6px #dadada, -5px -5px 6px #f6f6f6;
   transition: 0.4s;
-  margin: 0 auto; /* Centra horizontalmente las tarjetas */
+  margin: 0 auto;
 }
 
 .card-title {
@@ -103,30 +103,38 @@ body {
 
 @media (max-width: 575.98px) {
   body {
-    font-size: 16px; /* Tamaño de fuente más pequeño */
+    font-size: 16px;
   }
 
   h2 {
-    font-size: 30px; /* Tamaño de encabezado más pequeño */
+    font-size: 30px;
   }
 
   .frase {
-    font-size: 20px; /* Tamaño de frase más pequeño */
+    font-size: 20px;
   }
 
   .card {
-    width: 100%; /* Tarjeta ocupa el ancho completo */
-    margin: 10px 0; /* Espaciado vertical entre tarjetas */
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .equipo {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
   }
 
   .principal {
-    width: 150px; /* Tamaño de imagen más pequeño */
-    height: 150px; /* Mantiene proporción */
+    width: 150px;
+    height: 150px;
   }
 
   .parrafo {
-    font-size: 16px; /* Tamaño de texto más pequeño */
-    padding: 0 10px; /* Agrega padding lateral */
+    font-size: 16px;
+    padding: 0 10px;
+    text-align: center;
+    margin-top: 15px;
   }
 }
 
@@ -145,6 +153,11 @@ body {
 
   .card {
     width: 90%;
+  }
+
+  .equipo {
+    flex-direction: row;
+    justify-content: space-between; 
   }
 
   .principal {
