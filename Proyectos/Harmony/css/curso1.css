@@ -117,3 +117,100 @@ h2 {
 a {
   text-decoration: none;
 }
+
+@media only screen and (max-width: 1200px) {
+  h2 {
+    font-size: 48px;
+    padding: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .contenido {
+    padding: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .about {
+    width: 100%;
+    height: auto;
+  }
+
+  .principal {
+    padding: 20px;
+  }
+
+  .docente {
+    font-size: 32px;
+  }
+
+  .texto {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  h2 {
+    font-size: 40px;
+  }
+
+  .contenido {
+    padding: 20px;
+  }
+
+  .container img {
+    height: 25%;
+  }
+
+  .area {
+    width: 150px;
+    height: 150px;
+  }
+
+  .media {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .media-body {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  h2 {
+    font-size: 30px;
+    padding: 20px;
+  }
+
+  .about {
+    height: auto;
+    padding: 10px;
+  }
+
+  .texto {
+    font-size: 16px;
+  }
+
+  .media-body {
+    align-items: center;
+  }
+
+  .nombres {
+    margin-bottom: 5px;
+  }
+
+  .docente {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .media-body {
+    margin-left: 0;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+}

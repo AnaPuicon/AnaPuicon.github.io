@@ -467,3 +467,26 @@ footer p{
         font-size: 16px;
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    h1, h2 {
+        font-size: 1.5em;
+    }
+
+    .bot-text {
+        font-size: 1em;
+    }
+
+    .video-container video {
+        width: 100%;
+        height: auto;
+    }
+    
+    ol.bot-text li ul li, ol.bot-text li {
+        font-size: 0.9em;
+    }
+}

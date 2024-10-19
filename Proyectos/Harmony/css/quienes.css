@@ -98,5 +98,61 @@ a {
 }
 
 body {
-  overflow-x: hidden; /* Esto oculta cualquier desbordamiento horizontal */
+  overflow-x: hidden;
+}
+
+@media (max-width: 575.98px) {
+  body {
+    font-size: 16px; /* Tamaño de fuente más pequeño */
+  }
+
+  h2 {
+    font-size: 30px; /* Tamaño de encabezado más pequeño */
+  }
+
+  .frase {
+    font-size: 20px; /* Tamaño de frase más pequeño */
+  }
+
+  .card {
+    width: 100%; /* Tarjeta ocupa el ancho completo */
+    margin: 10px 0; /* Espaciado vertical entre tarjetas */
+  }
+
+  .principal {
+    width: 150px; /* Tamaño de imagen más pequeño */
+    height: 150px; /* Mantiene proporción */
+  }
+
+  .parrafo {
+    font-size: 16px; /* Tamaño de texto más pequeño */
+    padding: 0 10px; /* Agrega padding lateral */
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body {
+    font-size: 20px; 
+  }
+
+  h2 {
+    font-size: 50px;
+  }
+
+  .frase {
+    font-size: 30px;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .principal {
+    width: 200px; 
+    height: 200px;
+  }
+
+  .parrafo {
+    font-size: 20px;
+  }
 }
