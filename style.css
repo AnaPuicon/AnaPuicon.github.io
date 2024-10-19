@@ -7,23 +7,22 @@ body{
     font-family: 'Yanone Kaffeesatz', sans-serif;
     background-color: #fde6d7;
 }
-/* Navbar centrado */
+
 .navbar {
     display: flex;
     justify-content: center;
     background-color: #b96836;
     padding: 15px;
-    border-radius: 30px; /* Bordes redondeados */
+    border-radius: 30px;
     margin: 20px auto;
     width: 80%;
     max-width: 1000px;
 }
 
-/* Estilos de los items del navbar */
 .nav-items {
     list-style: none;
     display: flex;
-    gap: 30px; /* Espacio entre los elementos */
+    gap: 30px;
     margin: 0;
     padding: 0;
 }
@@ -43,7 +42,7 @@ body{
 }
 
 .nav-items a:hover {
-    background-color: #e28246; /* Cambio de color al pasar el mouse */
+    background-color: #e28246;
 }
 
 h1{
@@ -200,7 +199,7 @@ h2{
 	flex-direction: column;
 	padding: 0 40px;
 	text-align: center;
-	font-size: 14px;
+	font-size: 20px;
 	transition: height 0.5s;
 }
 .overlay h3 {
@@ -213,7 +212,7 @@ h2{
 .overlay a {
 	color: #ffffff;
 	text-decoration: none;
-	font-size: 15px;
+	font-size: 18px;
 	background: #b96836;
 	border-radius: 50px;
 	text-align: center;
@@ -247,15 +246,13 @@ footer p{
     margin: 20px;
 }
 
-/* Estilos para el botón de hamburguesa */
-.hamburger {
-    display: none;
-    font-size: 30px;
-    cursor: pointer;
+.video-container {
+    padding: 50px;
+    text-align: center;
 }
 
 .bot-text {
-    font-size: 18px;
+    font-size: 25px;
 }
 
 /* MEDIAQUERYS */
@@ -303,13 +300,11 @@ footer p{
 
 }
 
-
-
 @media screen and (max-width: 768px) {
 
     .navbar {
-        z-index: 1050; /* Bootstrap usa 1040 para modales, así que 1050 está por encima de todo lo demás */
-        position: relative; /* z-index solo funciona en elementos posicionados */
+        z-index: 1050;
+        position: relative;
     }
     
     #nav-list {

@@ -45,7 +45,7 @@ h2 {
 }
 
 .form-container .form .input {
-  color: #a5d8f7;
+  color: #000000;
   width: 100%;
   background-color: #ffffff;
   border: none;
@@ -67,7 +67,7 @@ h2 {
   border: none;
   outline: none;
   background-color: #ffffff;
-  color: #f4a305;
+  color: #000000;
   font-weight: bold;
   resize: none;
   max-height: 150px;
@@ -113,7 +113,7 @@ h2 {
   padding: 10px;
   color: #ffffff;
   font-weight: bold;
-  background: #e86d11;
+  background: #f4a305;
   clip-path: polygon(
     0 0,
     100% 0,
