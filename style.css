@@ -345,3 +345,52 @@ footer p{
     }
 
 }
+
+@media (max-width: 768px) {
+    .navbar-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 20px;
+    }
+
+    .bar {
+        width: 30px;
+        height: 4px;
+        background-color: white;
+        border-radius: 10px;
+    }
+
+    .nav-items {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        background-color: #b96836;
+        border-radius:30px;
+        box-shadow: 0px 4px 2px -2px gray;
+    }
+
+    .nav-items.active {
+        display: flex;
+    }
+
+    .nav-items li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .nav-items a {
+        padding: 5px;
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    .nav-items a:hover {
+        background-color: #e28246;
+    }
+}
