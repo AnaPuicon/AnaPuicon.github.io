@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
 
     var titulo = document.getElementById("titulo");
-    var contenido = "Desarrolladora de Sistemas con Experiencia en Automatización de Procesos y Desarrollo Web";
+    var contenido = "Desarrolladora de Software FullStack Junior | Backend en C# y Frontend en JS/Bootstrap";
     
     titulo.textContent = "";
 
